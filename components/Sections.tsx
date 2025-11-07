@@ -230,7 +230,7 @@ export const AcademicsSection = () => (
       <BookOpenIcon className="w-16 h-16 mx-auto mb-4 text-blue-400" />
       <h2 className="text-3xl md:text-4xl font-bold mb-6">Academics</h2>
       <div className="space-y-4 text-lg text-gray-300">
-        <p>CBSE Curriculum</p>
+        <p>Cambridge Curriculum</p>
         <p>Strong foundational literacy + numeracy building</p>
         <p>Tech integrated learning from early classes</p>
         <p>Continuous assessment + personalised feedback</p>
@@ -246,7 +246,7 @@ export const ParentTrustSection = () => (
       <UsersIcon className="w-16 h-16 mx-auto mb-4 text-blue-400" />
       <h2 className="text-3xl md:text-4xl font-bold mb-6">Parents Trust Dalimss Sunbeam</h2>
       <p className="text-lg text-gray-300">
-        We are the most respected education names of Varanasi with thousands of families trusting our legacy, discipline, academics and values.
+        We are the most respected educational institution in Varanasi, with lakhs of families trusting our legacy, discipline, academics, and values.
       </p>
     </div>
   </Section>
