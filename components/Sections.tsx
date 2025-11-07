@@ -465,7 +465,7 @@ export const Footer = () => (
           <p className="flex items-center justify-center sm:justify-start gap-2"><PhoneIcon className="w-5 h-5" /> +91 63079 30834</p>
         </div>
         <div>
-          <h3 className="font-bold text-white text-lg mb-2">Follow Us</h3>
+          
 
         </div>
       </div>
