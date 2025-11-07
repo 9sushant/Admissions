@@ -245,7 +245,7 @@ export const AdmissionProcessSection = () => {
     { title: 'Fill Enquiry Form', description: 'Start your journey by filling out the online admission form.' },
     { title: 'School Team Contacts You', description: 'Our admission counselors will get in touch to guide you.' },
     { title: 'Campus Tour & Counselling', description: 'Visit our state-of-the-art campus and meet our team.' },
-    { title: 'If Selected', description: 'meet our team.' }
+    { title: 'If Selected', description: 'meet our team.' },
     { title: 'Admission Confirmation', description: "Complete the final steps to secure your child's place." },
   ];
 
