@@ -16,6 +16,7 @@ import {
   MailIcon,
   InstagramIcon,
   XCircleIcon,
+  WhatsAppIcon
 } from "./Icons";
 
 /* ----------------------------- Section Wrapper ----------------------------- */
@@ -52,21 +53,33 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onApplyNowClick }) => 
         <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-300">
           A new generation school for future-ready learners in Varanasi.
         </p>
-        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button
-            onClick={onApplyNowClick}
-            className="w-full sm:w-auto text-lg font-semibold bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg transition-transform transform hover:scale-105 shadow-lg shadow-blue-600/30"
-          >
-            Apply for Admissions 2025–26
-          </button>
-          <a
-            href="tel:+911234567890"
-            className="w-full sm:w-auto text-lg font-semibold bg-gray-700 hover:bg-gray-600 text-white py-3 px-8 rounded-lg transition-transform transform hover:scale-105 flex items-center justify-center gap-2"
-          >
-            <PhoneIcon className="w-5 h-5" />
-            Call Now: +91 63079 30834
-          </a>
-        </div>
+<div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+  <button
+    onClick={onApplyNowClick}
+    className="w-full sm:w-auto text-lg font-semibold bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg transition-transform transform hover:scale-105 shadow-lg shadow-blue-600/30"
+  >
+    Apply for Admissions 2025–26
+  </button>
+
+  <a
+    href="tel:+916307930834"
+    className="w-full sm:w-auto text-lg font-semibold bg-gray-700 hover:bg-gray-600 text-white py-3 px-8 rounded-lg transition-transform transform hover:scale-105 flex items-center justify-center gap-2"
+  >
+    <PhoneIcon className="w-5 h-5" />
+    Call Now: +91 63079 30834
+  </a>
+
+  <a
+    href="https://wa.me/916307930834?text=Hello!%20I%20am%20interested%20in%20admission%20details."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full sm:w-auto text-lg font-semibold bg-green-600 hover:bg-green-700 text-white py-3 px-8 rounded-lg transition-transform transform hover:scale-105 flex items-center justify-center gap-2"
+  >
+    <WhatsAppIcon className="w-5 h-5" />
+    Chat on WhatsApp
+  </a>
+</div>
+
       </div>
     </div>
   );
