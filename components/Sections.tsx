@@ -90,7 +90,7 @@ export const AdmissionForm = forwardRef<HTMLElement>((props, ref) => {
   };
 
   // --- SUBMISSION LOGIC ---
-  const handleSubmission = useCallback(async (). => {
+  const handleSubmission = useCallback(async () => {
     setSubmissionState('submitting');
     setErrorMessage('');
 
