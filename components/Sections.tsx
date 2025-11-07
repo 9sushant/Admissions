@@ -108,7 +108,7 @@ export const AIPoweredSection = () => (
               <p className="text-lg text-gray-400 mb-8">Dalimss Sunbeam Sigra stands apart because we prepare children for tomorrow:</p>
               <ul className="space-y-4">
                   {[
-            _       'AI assisted Lesson Planning for teachers',
+                     'AI assisted Lesson Planning for teachers',
                       'AI based personalised question generation for students',
                       'Smart board presentation mode for modern classroom teaching',
                       'Focus on critical thinking, creativity & real understanding (not rote learning)',
