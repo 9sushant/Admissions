@@ -51,7 +51,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onApplyNowClick }) => 
           India’s First AI-Powered School 
         </h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-300">
-          A new generation school for future-ready learners in Varanasi.
+               A new generation school for future-ready learners in Varanasi.
                        (Nursery to Class 8)
         </p>
 <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
