@@ -78,7 +78,7 @@ export const TrustMarkers = () => {
     { icon: <GraduationCapIcon />, text: "CBSE Curriculum" },
     { icon: <SparklesIcon />, text: "Practical Exposure + Real-World Skills" },
     { icon: <ZapIcon />, text: "AI Integrated Teaching" },
-    { icon: <UsersIcon />, text: "35+ Year Legacy of Sunbeam Education Culture" },
+    { icon: <UsersIcon />, text: "53+ Year Legacy of Sunbeam Education Culture" },
   ];
 
   return (
@@ -233,7 +233,7 @@ export const ParentTrustSection = () => (
       <UsersIcon className="w-16 h-16 mx-auto mb-4 text-blue-400" />
       <h2 className="text-3xl md:text-4xl font-bold mb-6">Parents Trust Dalimss Sunbeam</h2>
       <p className="text-lg text-gray-300">
-        We are one of the most respected education names of Varanasi with thousands of families trusting our legacy, discipline, academics and values.
+        We are the most respected education names of Varanasi with thousands of families trusting our legacy, discipline, academics and values.
       </p>
     </div>
   </Section>
@@ -466,7 +466,7 @@ export const Footer = () => (
         </div>
         <div>
           <h3 className="font-bold text-white text-lg mb-2">Follow Us</h3>
-          <a href="#" className="flex items-center justify-center sm:justify-start gap-2 hover:text-white transition"><InstagramIcon className="w-5 h-5" /> @dalimssnewsbanaras</a>
+          <a href="#" className="flex items-center justify-center sm:justify-start gap-2 hover:text-white transition"><InstagramIcon className="w-5 h-5" /> https://www.instagram.com/dalimss_schools/?hl=en</a>
         </div>
       </div>
       <div className="mt-8 border-t border-gray-800 pt-6 text-center text-sm">
