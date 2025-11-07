@@ -47,7 +47,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onApplyNowClick }) => 
       <div className="absolute inset-0 bg-grid-white/[0.05] [mask-image:linear-gradient(to_bottom,white_5%,transparent_100%)]" />
       <div className="relative z-10 px-4">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter bg-clip-text text-transparent bg-gradient-to-b from-white to-gray-400">
-          India’s First AI-Powered School in Purvanchal
+          India’s First AI-Powered School 
         </h1>
         <p className="mt-4 max-w-3xl mx-auto text-lg md:text-xl text-gray-300">
           A new generation school for future-ready learners in Varanasi.
@@ -64,7 +64,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onApplyNowClick }) => 
             className="w-full sm:w-auto text-lg font-semibold bg-gray-700 hover:bg-gray-600 text-white py-3 px-8 rounded-lg transition-transform transform hover:scale-105 flex items-center justify-center gap-2"
           >
             <PhoneIcon className="w-5 h-5" />
-            Call Now: +91 12345 67890
+            Call Now: +91 63079 30834
           </a>
         </div>
       </div>
@@ -245,6 +245,7 @@ export const AdmissionProcessSection = () => {
     { title: 'Fill Enquiry Form', description: 'Start your journey by filling out the online admission form.' },
     { title: 'School Team Contacts You', description: 'Our admission counselors will get in touch to guide you.' },
     { title: 'Campus Tour & Counselling', description: 'Visit our state-of-the-art campus and meet our team.' },
+    { title: 'If Selected', description: 'meet our team.' }
     { title: 'Admission Confirmation', description: "Complete the final steps to secure your child's place." },
   ];
 
@@ -461,7 +462,7 @@ export const Footer = () => (
         <div>
           <h3 className="font-bold text-white text-lg mb-2">Contact Us</h3>
           <p className="flex items-center justify-center sm:justify-start gap-2"><MapPinIcon className="w-5 h-5" /> Varanasi</p>
-          <p className="flex items-center justify-center sm:justify-start gap-2"><PhoneIcon className="w-5 h-5" /> +91 12345 67890</p>
+          <p className="flex items-center justify-center sm:justify-start gap-2"><PhoneIcon className="w-5 h-5" /> +91 63079 30834</p>
         </div>
         <div>
           <h3 className="font-bold text-white text-lg mb-2">Follow Us</h3>
