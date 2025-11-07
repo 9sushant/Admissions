@@ -190,51 +190,37 @@ export const AIPoweredSection = () => (
 );
 
 /* ----------------------------- Improved Form Logic ----------------------------- */
+/* ------------- FIXED Google Apps Script submission function --------------- */
 async function submitApplicationApi(formData: any) {
   const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbwSTR1u3yajr0y6N30dm-Qn34bKqYNBZCtynrnn2-FUU2Jy9aCJUAamh7cB2NwHWPiVLQ/exec";
+    "https://script.google.com/macros/s/AKfycbwSTR1u3yajr0y6N30dm-Qn34bKqYNBZCtynrnn2-FUU2Jy9aCJUAamh7cB2NwHWPiVLQ/exec";
 
-  const data = new FormData();
-  data.append("studentName", formData.studentName || "");
-  data.append("email", formData.email || "");
-  data.append("parentName", formData.parentName || "");
-  data.append("classSeeking", formData.classSeeking || "");
-  data.append("locality", formData.locality || "");
-  data.append("mobileNumber", formData.mobileNumber || "");
-
-  const timeout = (ms: number) =>
-    new Promise((_, reject) =>
-      setTimeout(() => reject(new Error("Request timed out. Please try again.")), ms)
-    );
+  const body = new URLSearchParams({
+    studentName: formData.studentName,
+    email: formData.email,
+    parentName: formData.parentName,
+    classSeeking: formData.classSeeking,
+    locality: formData.locality,
+    mobileNumber: formData.mobileNumber,
+  }).toString();
 
   try {
-    const response = await Promise.race([
-      fetch(SCRIPT_URL, { method: "POST", body: data }),
-      timeout(10000),
-    ]);
+    await fetch(SCRIPT_URL, {
+      method: "POST",
+      mode: "no-cors", // ✅ IMPORTANT FOR GOOGLE SCRIPT
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body,
+    });
 
-    if (!(response instanceof Response)) {
-      throw new Error("Unexpected response type");
-    }
-
-    const text = await response.text();
-    let result: any;
-    try {
-      result = JSON.parse(text);
-    } catch {
-      result = { result: "error", message: text || "Unknown error" };
-    }
-
-    if (response.ok && result.result === "success") {
-      return { success: true };
-    } else {
-      throw new Error(result.message || "Server returned an unknown error.");
-    }
-  } catch (err: any) {
-    console.error("Submission failed:", err);
-    throw new Error(err.message || "Something went wrong while submitting.");
+    return { success: true }; // ✅ assume success (no-cors cannot read response)
+  } catch (error: any) {
+    console.error("Submission failed:", error);
+    return { success: false, message: error.message || "Failed to submit." };
   }
 }
+
 
 /* ----------------------------- Admission Form ----------------------------- */
 export const AdmissionForm = forwardRef<HTMLElement>((props, ref) => {
