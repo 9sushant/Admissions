@@ -192,7 +192,7 @@ export const AIPoweredSection = () => (
 /* ----------------------------- Improved Form Logic ----------------------------- */
 async function submitApplicationApi(formData: any) {
   const SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbx98hyxPGE-YSxLIBijvFcnK3_gCPMRlriiMLfYGl-gEvLbd23X-QHqeqZeNsP2ksoQJg/exec";
+  "https://script.google.com/macros/s/AKfycbwSTR1u3yajr0y6N30dm-Qn34bKqYNBZCtynrnn2-FUU2Jy9aCJUAamh7cB2NwHWPiVLQ/exec";
 
   const data = new FormData();
   data.append("studentName", formData.studentName || "");
