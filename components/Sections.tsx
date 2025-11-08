@@ -310,7 +310,7 @@ export const AdmissionProcessSection = () => {
 /* ------------- FIXED Google Apps Script submission function --------------- */
 async function submitApplicationApi(formData: any) {
   const SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbxiHWQ9CPa5P_Q6tP2Ce4mjUCRbGVoE4Ehq9mrJTK1vj5NReyYVfyS2Lkrb9WHLzmTuhg/exec";
+    "https://script.google.com/macros/s/AKfycbzaD3Tr3MEoZoNrTAMXGIISEg7ZKykb3767uw3p0-yTPdIe0c8beoBlS6dXMIyAE9DlSw/exec";
 
   const body = new URLSearchParams({
     studentName: formData.studentName,
