@@ -360,7 +360,7 @@ export const OurBranchesSection = () => {
         {branches.map((branch, index) => (
           <div
             key={index}
-            className="flex flex-col sm:flex-row bg-[#5c0b0b] rounded-2xl overflow-hidden shadow-lg border border-red-900/50 hover:scale-[1.02] transition-transform duration-300"
+            className="flex flex-col sm:flex-row bg-gray-800 rounded-2xl overflow-hidden shadow-lg border border-gray-700 hover:scale-[1.02] transition-transform duration-300"
           >
             {/* Image Area */}
             <div className="sm:w-1/3 h-48 sm:h-auto relative">
@@ -374,19 +374,19 @@ export const OurBranchesSection = () => {
             {/* Content Area */}
             <div className="p-6 flex-1 flex flex-col justify-center">
               <h3 className="text-xl font-bold text-white mb-2">{branch.name}</h3>
-              <div className="space-y-2 text-red-100/90 text-sm">
+              <div className="space-y-2 text-gray-300 text-sm">
                 <p className="flex items-center gap-2">
-                  <MapPinIcon className="w-4 h-4 flex-shrink-0" />
+                  <MapPinIcon className="w-4 h-4 flex-shrink-0 text-blue-400" />
                   {branch.location}
                 </p>
                 <p className="flex items-center gap-2">
-                  <PhoneIcon className="w-4 h-4 flex-shrink-0" />
+                  <PhoneIcon className="w-4 h-4 flex-shrink-0 text-blue-400" />
                   <a href={`tel:${branch.phone.replace(/[^0-9+]/g, '')}`} className="hover:underline">
                     {branch.phone}
                   </a>
                 </p>
                 <p className="flex items-center gap-2">
-                  <MailIcon className="w-4 h-4 flex-shrink-0" />
+                  <MailIcon className="w-4 h-4 flex-shrink-0 text-blue-400" />
                   <a href={`mailto:${branch.email}`} className="hover:underline break-all">
                     {branch.email}
                   </a>
