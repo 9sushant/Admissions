@@ -60,7 +60,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onApplyNowClick }) => 
     onClick={onApplyNowClick}
     className="w-full sm:w-auto text-lg font-semibold bg-blue-600 hover:bg-blue-700 text-white py-3 px-8 rounded-lg transition-transform transform hover:scale-105 shadow-lg shadow-blue-600/30"
   >
-    Apply for Admissions 2025–26
+    Apply for Admissions 2026–27
   </button>
 
   <a
@@ -501,7 +501,7 @@ export const AdmissionForm = forwardRef<HTMLElement>((props, ref) => {
   return (
     <Section ref={ref} className="bg-gray-950">
       <div className="max-w-2xl mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-4">Apply Now For Admissions 2025–26</h2>
+        <h2 className="text-3xl font-bold text-center mb-4">Apply Now For Admissions 2026–27</h2>
         <div className="bg-gray-800 border border-gray-700 p-8 rounded-2xl shadow-lg">
           <form
             onSubmit={(e) => {
@@ -597,7 +597,7 @@ export const StickyCTA: React.FC<StickyCTAProps> = ({ onApplyNowClick }) => {
         onClick={onApplyNowClick}
         className="w-full text-lg font-semibold bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg transition-transform transform hover:scale-105 shadow-lg shadow-blue-600/30"
       >
-        Apply for Admissions 2025–26
+        Apply for Admissions 2026–27
       </button>
     </div>
   );
