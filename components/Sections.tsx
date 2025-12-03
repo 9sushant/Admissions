@@ -145,7 +145,7 @@ export const WhyChooseUsSection = () => {
   return (
     <Section>
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-        Why Choose Dalimss Sunbeam Global School Sigra?
+        Why Choose Dalimss Sunbeam GROUP OF SCHOOLS & HOSTEL?
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         {points.map((point, index) => (
@@ -173,7 +173,7 @@ export const AIPoweredSection = () => (
       <div>
         <h2 className="text-3xl md:text-4xl font-bold mb-6">AI Powered Future Learning</h2>
         <p className="text-lg text-gray-400 mb-8">
-          Dalimss Sunbeam Sigra stands apart because we prepare children for tomorrow:
+          Dalimss Sunbeam GROUP OF SCHOOLS & HOSTEL stands apart because we prepare children for tomorrow:
         </p>
         <ul className="space-y-4">
           {[
@@ -471,8 +471,8 @@ export const Footer = () => (
     <div className="container mx-auto max-w-6xl px-4 text-center sm:text-left">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div>
-          <h3 className="font-bold text-white text-lg mb-2">Dalimss Sunbeam Global School Sigra</h3>
-          <p>This is an official admission page for Dalimss Sunbeam Global School Sigra.</p>
+          <h3 className="font-bold text-white text-lg mb-2">Dalimss Sunbeam GROUP OF SCHOOLS & HOSTEL</h3>
+          <p>This is an official admission page for Dalimss Sunbeam GROUP OF SCHOOLS & HOSTEL.</p>
         </div>
         <div>
           <h3 className="font-bold text-white text-lg mb-2">Contact Us</h3>
@@ -485,7 +485,7 @@ export const Footer = () => (
         </div>
       </div>
       <div className="mt-8 border-t border-gray-800 pt-6 text-center text-sm">
-        <p>&copy; {new Date().getFullYear()} Dalimss Sunbeam Global School. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Dalimss Sunbeam GROUP OF SCHOOLS & HOSTEL. All Rights Reserved.</p>
       </div>
     </div>
   </footer>

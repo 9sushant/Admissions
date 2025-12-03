@@ -24,7 +24,7 @@ export default function App() {
     <div className="bg-gray-900 text-white overflow-x-hidden">
       <header className="absolute top-0 left-0 w-full z-10 p-4 sm:p-6">
         <div className="container mx-auto">
-          <h1 className="text-xl md:text-2xl font-bold tracking-tight">Dalimss Sunbeam Global School Sigra</h1>
+          <h1 className="text-xl md:text-2xl font-bold tracking-tight">Dalimss Sunbeam GROUP OF SCHOOLS & HOSTEL</h1>
         </div>
       </header>
       
