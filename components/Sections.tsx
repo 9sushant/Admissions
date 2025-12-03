@@ -314,36 +314,42 @@ export const OurBranchesSection = () => {
       location: "Rohania, Varanasi",
       phone: "+91-9918401619",
       email: "principal.rohania@dalimss.com",
+      image: "/images/branch-1.png"
     },
     {
       name: "DALIMSS Sunbeam Sigra",
       location: "Sigra, Varanasi",
       phone: "+91-6307930834",
       email: "principal.sigra@dalimss.com",
+      image: "/images/branch-2.png"
     },
     {
       name: "DALIMSS Sunbeam Ramkatora",
       location: "Ramkatora, Varanasi",
       phone: "+91-6392752945",
       email: "principal.ramkatora@dalimss.com",
+      image: "/images/branch-3.png"
     },
     {
       name: "DALIMSS Sunbeam World Paharia",
       location: "Paharia, Varanasi",
       phone: "+91-6392752971",
       email: "hm.paharia@dalimss.com",
+      image: "/images/branch-4.png"
     },
     {
       name: "DALIMSS Sunbeam Mohinikunj",
       location: "Mohinikunj, Varanasi",
       phone: "+91-6307930833",
       email: "hm.mohinikunj@dalimss.com",
+      image: "/images/branch-1.png" // Reusing image 1
     },
     {
       name: "DALIMSS Sunbeam NTPC",
       location: "NTPC, Tanda",
       phone: "0542–2255605",
       email: "dalimsstandantpc@gmail.com",
+      image: "/images/branch-2.png" // Reusing image 2
     },
   ];
 
@@ -356,9 +362,13 @@ export const OurBranchesSection = () => {
             key={index}
             className="flex flex-col sm:flex-row bg-[#5c0b0b] rounded-2xl overflow-hidden shadow-lg border border-red-900/50 hover:scale-[1.02] transition-transform duration-300"
           >
-            {/* Placeholder Image Area */}
-            <div className="sm:w-1/3 bg-gradient-to-br from-red-900 to-red-950 flex items-center justify-center p-6">
-               <GraduationCapIcon className="w-12 h-12 text-red-200/50" />
+            {/* Image Area */}
+            <div className="sm:w-1/3 h-48 sm:h-auto relative">
+               <img 
+                src={branch.image} 
+                alt={branch.name}
+                className="w-full h-full object-cover absolute inset-0"
+               />
             </div>
             
             {/* Content Area */}
