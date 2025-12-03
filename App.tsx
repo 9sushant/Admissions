@@ -9,6 +9,7 @@ import {
   ParentTrustSection,
   AdmissionProcessSection,
   AdmissionForm,
+  OurBranchesSection,
   Footer,
   StickyCTA
 } from './components/Sections';
@@ -37,6 +38,7 @@ export default function App() {
         <AcademicsSection />
         <ParentTrustSection />
         <AdmissionProcessSection />
+        <OurBranchesSection />
         <AdmissionForm ref={formRef} />
       </main>
       

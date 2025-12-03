@@ -306,6 +306,90 @@ export const AdmissionProcessSection = () => {
   );
 };
 
+/* ----------------------------- Our Branches (NEW) ----------------------------- */
+export const OurBranchesSection = () => {
+  const branches = [
+    {
+      name: "DALIMSS Sunbeam Rohania",
+      location: "Rohania, Varanasi",
+      phone: "+91-9918401619",
+      email: "principal.rohania@dalimss.com",
+    },
+    {
+      name: "DALIMSS Sunbeam Sigra",
+      location: "Sigra, Varanasi",
+      phone: "+91-6307930834",
+      email: "principal.sigra@dalimss.com",
+    },
+    {
+      name: "DALIMSS Sunbeam Ramkatora",
+      location: "Ramkatora, Varanasi",
+      phone: "+91-6392752945",
+      email: "principal.ramkatora@dalimss.com",
+    },
+    {
+      name: "DALIMSS Sunbeam World Paharia",
+      location: "Paharia, Varanasi",
+      phone: "+91-6392752971",
+      email: "hm.paharia@dalimss.com",
+    },
+    {
+      name: "DALIMSS Sunbeam Mohinikunj",
+      location: "Mohinikunj, Varanasi",
+      phone: "+91-6307930833",
+      email: "hm.mohinikunj@dalimss.com",
+    },
+    {
+      name: "DALIMSS Sunbeam NTPC",
+      location: "NTPC, Tanda",
+      phone: "0542–2255605",
+      email: "dalimsstandantpc@gmail.com",
+    },
+  ];
+
+  return (
+    <Section className="bg-gray-900">
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Branches</h2>
+      <div className="grid md:grid-cols-2 gap-6">
+        {branches.map((branch, index) => (
+          <div
+            key={index}
+            className="flex flex-col sm:flex-row bg-[#5c0b0b] rounded-2xl overflow-hidden shadow-lg border border-red-900/50 hover:scale-[1.02] transition-transform duration-300"
+          >
+            {/* Placeholder Image Area */}
+            <div className="sm:w-1/3 bg-gradient-to-br from-red-900 to-red-950 flex items-center justify-center p-6">
+               <GraduationCapIcon className="w-12 h-12 text-red-200/50" />
+            </div>
+            
+            {/* Content Area */}
+            <div className="p-6 flex-1 flex flex-col justify-center">
+              <h3 className="text-xl font-bold text-white mb-2">{branch.name}</h3>
+              <div className="space-y-2 text-red-100/90 text-sm">
+                <p className="flex items-center gap-2">
+                  <MapPinIcon className="w-4 h-4 flex-shrink-0" />
+                  {branch.location}
+                </p>
+                <p className="flex items-center gap-2">
+                  <PhoneIcon className="w-4 h-4 flex-shrink-0" />
+                  <a href={`tel:${branch.phone.replace(/[^0-9+]/g, '')}`} className="hover:underline">
+                    {branch.phone}
+                  </a>
+                </p>
+                <p className="flex items-center gap-2">
+                  <MailIcon className="w-4 h-4 flex-shrink-0" />
+                  <a href={`mailto:${branch.email}`} className="hover:underline break-all">
+                    {branch.email}
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </Section>
+  );
+};
+
 /* ----------------------------- Form submission (unchanged) ----------------------------- */
 /* ------------- FIXED Google Apps Script submission function --------------- */
 async function submitApplicationApi(formData: any) {
