@@ -565,7 +565,10 @@ export const Footer = () => (
     <div className="container mx-auto max-w-6xl px-4 text-center sm:text-left">
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <div>
-          <h3 className="font-bold text-white text-lg mb-2">Dalimss Sunbeam GROUP OF SCHOOLS & HOSTEL</h3>
+          <div className="flex items-center gap-3 mb-4">
+            <img src="/logo.jpg" alt="Dalimss Sunbeam Logo" className="h-10 w-10 rounded-full object-cover" />
+            <h3 className="font-bold text-white text-lg">Dalimss Sunbeam GROUP OF SCHOOLS & HOSTEL</h3>
+          </div>
           <p>This is an official admission page for Dalimss Sunbeam GROUP OF SCHOOLS & HOSTEL.</p>
         </div>
         <div>

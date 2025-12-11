@@ -24,7 +24,8 @@ export default function App() {
   return (
     <div className="bg-gray-900 text-white overflow-x-hidden">
       <header className="absolute top-0 left-0 w-full z-10 p-4 sm:p-6">
-        <div className="container mx-auto">
+        <div className="container mx-auto flex items-center gap-4">
+          <img src="/logo.jpg" alt="Dalimss Sunbeam Logo" className="h-12 w-12 rounded-full object-cover" />
           <h1 className="text-xl md:text-2xl font-bold tracking-tight">Dalimss Sunbeam GROUP OF SCHOOLS & HOSTEL</h1>
         </div>
       </header>
